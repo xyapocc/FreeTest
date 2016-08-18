@@ -1,0 +1,67 @@
+object OpenForm: TOpenForm
+  Left = 254
+  Height = 163
+  Top = 189
+  Width = 408
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Вопрос №1'
+  ClientHeight = 163
+  ClientWidth = 408
+  OnClose = FormClose
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.0.10.0'
+  object ConitunueOpenBtn: TButton
+    Left = 269
+    Height = 35
+    Top = 120
+    Width = 131
+    Caption = 'Продолжить'
+    Font.Height = -16
+    Font.Name = 'Cantarell'
+    OnClick = ConitunueOpenBtnClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object AnswerOpenEdit: TLabeledEdit
+    Left = 8
+    Height = 29
+    Top = 88
+    Width = 392
+    EditLabel.AnchorSideLeft.Control = AnswerOpenEdit
+    EditLabel.AnchorSideRight.Control = AnswerOpenEdit
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = AnswerOpenEdit
+    EditLabel.Left = 8
+    EditLabel.Height = 18
+    EditLabel.Top = 67
+    EditLabel.Width = 392
+    EditLabel.Caption = 'Ответ:'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Height = -13
+    EditLabel.Font.Name = 'Cantarell'
+    Font.Height = -16
+    Font.Name = 'Cantarell'
+    ParentFont = False
+    TabOrder = 1
+  end
+  object QuestionLabel: TLabel
+    Left = 8
+    Height = 56
+    Top = 8
+    Width = 392
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Вопрос'
+    Color = 6750207
+    Font.Height = -13
+    Font.Name = 'Cantarell'
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    WordWrap = True
+  end
+end

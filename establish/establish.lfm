@@ -1,0 +1,85 @@
+object EstablishForm: TEstablishForm
+  Left = 254
+  Height = 155
+  Top = 158
+  Width = 408
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Вопрос №1'
+  ClientHeight = 155
+  ClientWidth = 408
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.0.10.0'
+  object ContinueBtn: TButton
+    Left = 269
+    Height = 35
+    Top = 112
+    Width = 131
+    Caption = 'Продолжить'
+    Font.Height = -16
+    Font.Name = 'Cantarell'
+    OnClick = ContinueBtnClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object CompleteBtn: TButton
+    Left = 136
+    Height = 35
+    Top = 112
+    Width = 131
+    Caption = 'Завершить'
+    Font.Height = -16
+    Font.Name = 'Cantarell'
+    OnClick = CompleteBtnClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object QuestionEdit: TLabeledEdit
+    Left = 8
+    Height = 29
+    Top = 24
+    Width = 392
+    EditLabel.AnchorSideLeft.Control = QuestionEdit
+    EditLabel.AnchorSideRight.Control = QuestionEdit
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = QuestionEdit
+    EditLabel.Left = 8
+    EditLabel.Height = 18
+    EditLabel.Top = 3
+    EditLabel.Width = 392
+    EditLabel.Caption = 'Вопрос:'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Height = -13
+    EditLabel.Font.Name = 'Cantarell'
+    Font.Height = -16
+    Font.Name = 'Cantarell'
+    ParentFont = False
+    TabOrder = 0
+  end
+  object AnswerEdit: TLabeledEdit
+    Left = 8
+    Height = 29
+    Top = 80
+    Width = 392
+    EditLabel.AnchorSideLeft.Control = AnswerEdit
+    EditLabel.AnchorSideRight.Control = AnswerEdit
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = AnswerEdit
+    EditLabel.Left = 8
+    EditLabel.Height = 18
+    EditLabel.Top = 59
+    EditLabel.Width = 392
+    EditLabel.Caption = 'Ответ:'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Height = -13
+    EditLabel.Font.Name = 'Cantarell'
+    Font.Height = -16
+    Font.Name = 'Cantarell'
+    ParentFont = False
+    TabOrder = 1
+  end
+end
